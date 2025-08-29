@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced HTML5 Content and Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content and Form Example</h1>
+    <p>This page demonstrates lists, tables, media, and a structured HTML5 form with validation.</p>
+  </header>
+
+  <main>
+    <!-- Lists -->
+    <section>
+      <h2>Top 3 Web Development Tools</h2>
+      <ol>
+        <li>HTML5 for structure</li>
+        <li>CSS3 for styling</li>
+        <li>Accessibility standards for inclusiveness</li>
+      </ol>
+    </section>
+
+    <!-- Table -->
+    <section>
+      <h2>Comparison of HTML5 Input Types</h2>
+      <table border="1">
+        <caption>Examples of Input Fields</caption>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>Accepts email addresses</td>
+          <td><input type="email" placeholder="you@example.com"></td>
+        </tr>
+        <tr>
+          <td>Date</td>
+          <td>Select a calendar date</td>
+          <td><input type="date"></td>
+        </tr>
+        <tr>
+          <td>Number</td>
+          <td>Restricts input to numbers</td>
+          <td><input type="number" min="1" max="5"></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Media -->
+    <section>
+      <h2>Sample Media</h2>
+      <figure>
+        <img src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg" alt="Hummingbird" width="300" height="200">
+        <figcaption>Figure 1: Example Image</figcaption>
+      </figure>
+      <p>Listen to sample audio:</p>
+      <audio controls>
+        <source src="music/Burna_Boy_-_Onyeka_Baby.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      <p>Watch a short video:</p>
+      <video width="400" height="300" controls>
+        <source src="video/1542008-hd_1920_1080_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Form -->
+    <section>
+      <h2>Simple Registration Form</h2>
+      <form action="#" method="post">
+        
+        <fieldset>
+          <legend>Personal Details</legend>
+          
+          <label for="fullname">Full Name:</label><br>
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="John Doe"><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required placeholder="name@example.com" autocomplete="email"><br><br>
+
+          <label for="dob">Date of Birth:</label><br>
+          <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Information</legend>
+
+          <label for="username">Username:</label><br>
+          <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{4,12}" placeholder="4-12 letters/numbers"><br><br>
+
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" required minlength="6"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label>Gender:</label><br>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label><br><br>
+
+          <label for="country">Country:</label><br>
+          <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="us">Kenya</option>
+            <option value="uk">Lesotho</option>
+            <option value="ca">Canada</option>
+          </select><br><br>
+          
+          <label for="phone">Phone (xxx-xxx-xxxx):</label><br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br><br>
+        </fieldset>
+
+        <input type="submit" value="Register">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yvonne HTML5 Page. All Rights Reserved. </p>
+  </footer>
+
+</body>
+</html>
